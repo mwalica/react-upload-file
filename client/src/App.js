@@ -78,6 +78,12 @@ const Wrapper = styled.div`
   }
 `;
 
-const Image = styled.div``;
+const Image = styled.div`
+  width: 100%;
+  max-width: 500px;
+  img {
+    width: 100%;
+  }
+`;
 
 export default App;
