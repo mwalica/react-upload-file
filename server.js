@@ -14,6 +14,7 @@ app.post("/upload", (req, res) => {
     return res.status(400).json({ msg: "No file uploaded" });
   }
   const file = req.files.file;
+  console.log(file);
   file.mv(`${__dirname}/client/build/uploads/${file.name}`, (err) => {
     if (err) {
       console.error(err);
